@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task from Eden</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Add Colleague</h2>
+            </div>
+            <div class="col-md-6 text-right">
+                <img src="logo.png" alt="Logo" class="logo">
+            </div>
+        </div>
+        <hr>
+        <div class="container" style="border: 2px solid rgb(214, 214, 214); padding: 3px;">
+            <div class="container" style="background-color:#e6e9eb;">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item border">
+                        <a class="nav-link active" href="#tab1">Personal</a>
+                    </li>
+                </ul>
+            </div>
+            <form id="myForm" method="POST" action="submit.php">
+
+                <div class="row padd">
+                    <div class="col-md-3">
+                        <div class="form-group myclass">
+                            <label for="title "><strong>Title</strong></label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <select class="form-control" name="title" id="title">
+                                <option value="">Please Select</option>
+                                <option value="mr">Mr</option>
+                                <option value="miss">Miss</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group myclass">
+                            <label for="firstname "><strong>First Name</strong></label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <input type="text" name="firstname" id="firstname" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group myclass">
+                            <label for="surname"><strong>Surname</strong></label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <input type="text" name="surname" id="surname" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group myclass">
+                            <label for="informal_name "><strong>Informal Name</strong></label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <input type="text" name="informal_name" id="informal_name" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group myclass">
+                            <label for="address"><strong>Address</strong></label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <textarea name="address" id="address" class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group myclass">
+                            <label for="town"><strong>Town</strong></label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <input type="text" name="town" id="town" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group myclass">
+                            <label for="potcode"><strong>Postcode</strong></label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <input type="text" name="postcode" id="postcode" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group myclass">
+                            <label for="ni_number"><strong>NI Number</strong></label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <input type="number" name="ni_number" id="ni_number" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group myclass">
+                            <label for="dob"><strong>Date of birth</strong></label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <input type="date" name="dob" id="dob" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group myclass">
+                            <label for="mobile_tel"><strong>Mobile tel</strong></label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <input type="tel" name="mobile_tel" id="mobile_tel" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group myclass">
+                            <label for="home_tel"><strong>Home tel</strong></label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <input type="tel" name="home_tel" id="home_tel" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group myclass">
+                            <label for="other_tel"><strong>Other tel</strong></label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <input type="tel" name="other_tel" id="other_tel" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group myclass">
+                            <label for="email"><strong>Personal Email</strong></label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group myclass">
+                            <label for="gender"><strong>Gender</strong></label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <select class="form-control" name="gender" id="gender">
+                                <option value="">Please Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group myclass">
+                            <label for="initials"><strong>Initials</strong></label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <input type="text" name="initials" id="initials" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group myclass mv">
+                            <label for="emergency_name"><strong>Emergency Contact Name</strong></label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <input type="text" name="emergency_name" id="emergency_name" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary" id="submitButton">Submit</button><br>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Add this div for displaying the response -->
+    <div id="response">
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#myForm").submit(function (event) {
+                event.preventDefault(); // Prevent form submission
+
+                var formData = $(this).serialize(); // Serialize form data
+
+                // Validate required fields
+                var requiredFields = ["title", "firstname", "surname", "address", "postcode", "gender"];
+                var isValid = true;
+
+                requiredFields.forEach(function (field) {
+                    var value = $("#" + field).val().trim();
+                    if (value === "") {
+                        $("#" + field).addClass("is-invalid");
+                        isValid = false;
+                    } else {
+                        $("#" + field).removeClass("is-invalid");
+                    }
+                });
+
+                if (!isValid) {
+                    return;
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: "submit.php",
+                    data: formData,
+                    success: function (response) {
+                        alert("Colleague added successfully!"); // Display success message in a pop-up
+                        $("#response").html(response); // Display additional response message
+                        $("#myForm")[0].reset(); // Reset form
+                    }
+                });
+            });
+        });
+    </script>
+    <style>
+        .myclass {
+            padding-top: 3%;
+            text-align: end;
+        }
+
+        .padd {
+            padding-top: 10px;
+        }
+
+        .invalid-feedback {
+            display: block;
+            color: red;
+        }
+    </style>
+</body>
+
+</html>
